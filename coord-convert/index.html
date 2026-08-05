@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coord Convert — WGS84 · GCJ-02 · BD-09</title>
+  <meta name="description" content="Convert and detect WGS84, GCJ-02 (Amap), BD-09 (Baidu) coordinates. Free. Local-only." />
+  <style>
+    :root { --bg:#eef4fb; --ink:#0f172a; --muted:#64748b; --blue:#1d4ed8; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: "Segoe UI", system-ui, sans-serif; color: var(--ink);
+      background: radial-gradient(900px 420px at 10% -10%, #dbeafe 0%, transparent 55%),
+        radial-gradient(700px 380px at 100% 0%, #ccfbf1 0%, transparent 50%), var(--bg);
+      min-height: 100vh;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 56px 20px 72px; }
+    .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+    .brand img { width: 48px; height: 48px; border-radius: 12px; box-shadow: 0 8px 24px rgba(29,78,216,.2); background:#fff; }
+    .brand span { font-weight: 700; }
+    h1 { font-size: clamp(2rem,5vw,2.75rem); letter-spacing: -0.03em; margin: 0 0 14px; max-width: 16ch; line-height: 1.12; }
+    .lead { font-size: 1.125rem; color: var(--muted); line-height: 1.55; max-width: 38em; margin: 0 0 24px; }
+    .badge {
+      display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+      color: var(--blue); background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 999px; padding: 4px 10px; margin-bottom: 16px;
+    }
+    .cta {
+      display: inline-flex; padding: 12px 18px; border-radius: 10px; background: var(--blue);
+      color: #fff; text-decoration: none; font-weight: 700;
+    }
+    .cta.secondary { background: #fff; color: var(--ink); border: 1px solid #cbd5e1; margin-left: 8px; }
+    .formats { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0; }
+    .formats span { background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:6px 10px; font-size:13px; font-weight:600; }
+    .notes { margin-top: 36px; padding-top: 24px; border-top: 1px solid #e2e8f0; font-size: 14px; color: var(--muted); }
+    .notes a { color: var(--blue); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <img src="./logo.png" width="48" height="48" alt="Coord Convert" />
+      <span>Coord Convert</span>
+    </div>
+    <div class="badge">Free · Local-only</div>
+    <h1>WGS84 · GCJ-02 · BD-09</h1>
+    <p class="lead">
+      Convert GPS coordinates to Amap / Baidu (and back), or detect which system a mystery lon,lat belongs to —
+      entirely in your browser.
+    </p>
+    <p>
+      <a class="cta" href="#">Add to Chrome (coming soon)</a>
+      <a class="cta secondary" href="./privacy.html">Privacy</a>
+    </p>
+    <div class="formats">
+      <span>WGS84</span><span>GCJ-02 (Amap)</span><span>BD-09 (Baidu)</span><span>Detect</span><span>Batch</span>
+    </div>
+    <div class="notes">
+      <p>Contact: <a href="mailto:ylf4050@gmail.com">ylf4050@gmail.com</a></p>
+    </div>
+  </div>
+</body>
+</html>
